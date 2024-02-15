@@ -45,3 +45,10 @@ function onHandleMouseOut(event) {
   event.target.classList.remove("fw-bold");
   console.log(event.target);
 }
+
+// Add an event listener to the div element that listens for the click event.
+resources.addEventListener("click", onHandleClick);
+// In the event handler for this event, add the class fst-italic on e.target.
+function onHandleClick(e) {
+  e.target.classList.add("fst-italic");
+}
