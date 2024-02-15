@@ -52,3 +52,9 @@ resources.addEventListener("click", onHandleClick);
 function onHandleClick(e) {
   e.target.classList.add("fst-italic");
 }
+
+// On  the mouseout event, remove the class fst-italic from the e.target.
+resources.addEventListener("mouseout", onHandleMouseOutItalic);
+function onHandleMouseOutItalic(e) {
+  e.target.classList.remove("fst-italic");
+}
